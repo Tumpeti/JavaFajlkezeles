@@ -17,6 +17,7 @@ public class FileEsAdatszerkezetek {
 
     public FileEsAdatszerkezetek() throws IOException {
         this.sorok = Files.readAllLines(Path.of("fuvar.csv"));
+        assert !sorok.isEmpty():"üres a fájl!";
     }
 
     
